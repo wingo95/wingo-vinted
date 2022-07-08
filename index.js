@@ -15,6 +15,7 @@ const usersRoutes = require("./routes/users");
 app.use(usersRoutes);
 const offersRoutes = require("./routes/offers");
 app.use(offersRoutes);
+console.log("test");
 
 app.all("*", (req, res) => {
   res.status(400).json("Route introuvable");
